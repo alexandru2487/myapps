@@ -10,14 +10,16 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.6.0.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.bundle.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
