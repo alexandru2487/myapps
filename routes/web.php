@@ -18,3 +18,9 @@ Route::get('/', 'WelcomeController@index')->name('welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('users-list','UserListController@index')->name('users');
+    Route::get('users','UserListController@create')->name('users.create');
+    Route::post('users','UserListController@store')->name('users.store');
+});
